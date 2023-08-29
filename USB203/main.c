@@ -12,7 +12,7 @@
 
 int main(void)
 {
-	int p = 1, q = 0, besos = 0;
+	int p = 1, q = 0, cnt = 0;
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
     Delay_Init();
     USART_Printf_Init(115200);
@@ -23,7 +23,7 @@ int main(void)
 
     while(1)
     {
-        printf("Tetisa dio % 3d besos a Nely\r\n", besos++ );
+        printf("cnt is % 3d\r\n", cnt++ );
         GPIO_WriteBit( LEDs_PORT, LED1_PIN, (p) ? (p = Bit_RESET) : (p = Bit_SET));
         Delay_Ms(500);
         GPIO_WriteBit( LEDs_PORT, LED2_PIN, (q) ? (q = Bit_RESET) : (q = Bit_SET));
