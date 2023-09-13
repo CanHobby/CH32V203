@@ -1,3 +1,3 @@
 # CH32V203
-Sample Code for the WCH CH32V20x...
+Examples for the CH32V203 RISC-V MCU
  - <a href=USB203>printf, Dual Blink</a>.
